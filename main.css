@@ -1,11 +1,13 @@
-@import url(https://fonts.google.com/noto/specimen/Noto+Sans+KR);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Noto Sans KR';
+}
+
+body{
+    background-color: #000000;
 }
 
 .container{
@@ -14,22 +16,84 @@
 }
 
 .header{
-    background-color: #ffffff00;
+    background-color: #242424;
+    float: none;
     height: 40px;
     width: 100%;
 }
 
+.header a{
+    color: #aaaaaa;
+}
+
 .body{
-    height: 600px;
-    background-color: #ff8a8a;
+    text-align: center;
+    width: 100%;
+    color: seashell;
+    background-color: #00000000;
 }
 
 footer{
-    background-color: #333;
+    background-color: #242424;
     height: 100px;
     width: 100%;
 }
 
+.footergrid{
+    width: 100%;
+    height: 100%;
+}
+
+.footeritem{
+    text-align: left;
+    color: rgb(170, 170, 170);
+}
+
+.footeritem a{
+    color: rgb(170, 170, 170);
+}
+
+#Copyright{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+#Contact{
+    color: #aaaaaa;
+    font-size: 12px;
+    margin: 20px;
+}
+
+#section1{
+    padding: 20px;
+}
+
+#section2{
+    padding: 20px;
+}
+
+.main{
+    height: 200px auto;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.About{
+    height: 200px auto;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.Contact{
+    height: 200px auto;
+    font-size: 15px;
+}
+
+.Project{
+    height: 200px auto;
+    font-size: 15px;
+    margin: 20px;
+}
 .start{
     margin: 10px  auto;
     float: left;
@@ -43,10 +107,5 @@ footer{
 #menu ul li{
     margin: 10px;
     line-height: 10px auto;
-    display: inline-block;
-}
-
-.footergrid{
-    margin: 10px;
     display: inline-block;
 }

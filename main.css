@@ -18,8 +18,10 @@ body{
 
 .header{
     background-color: #242424;
-    float: none;
-    height: 40px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    height: 50px;
     width: 100%;
 }
 
@@ -43,6 +45,7 @@ footer{
 }
 
 .footergrid{
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -58,7 +61,8 @@ footer{
 }
 
 #section1{
-    float: left;
+    position: absolute;
+    left: 0;
     padding: 20px;
 }
 
@@ -71,20 +75,24 @@ footer{
 }
 
 #section2{
-    float: right;
+    position: absolute;
+    right: 0;
     padding: 20px;
 }
 
 .main{
     height: 200px auto;
+    margin: 10px;
 }
 
 .About{
     height: 200px auto;
+    margin: 10px;
 }
 
 .Contact{
     height: 200px auto;
+    margin: 10px;
 }
 
 .Project{
@@ -92,18 +100,20 @@ footer{
     font-size: 15px;
     margin: 20px;
 }
-.start{
-    margin: 10px  auto;
-    float: left;
+.header .start{
+    position: absolute;
+    padding: 10px;
+    left: 0;
 }
 
-.end{
-    height: 10px auto;
-    float: right;
+.header .end{
+    position: absolute;
+    
+    right: 0;
+    
 }
 
 #menu ul li{
     margin: 10px;
-    line-height: 10px auto;
     display: inline-block;
 }

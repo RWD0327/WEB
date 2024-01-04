@@ -66,19 +66,19 @@ div{
 }
 
 .body .container .main{
-    height: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
 
 .body .container .About{
-    height: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
 
 .body .container .Projects{
-    height: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }

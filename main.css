@@ -72,6 +72,7 @@ div{
 }
 
 .body .container .main{
+    margin-top: 10px;
     height: 200px;
     justify-content: center;
     align-items: center;

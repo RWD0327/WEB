@@ -66,13 +66,12 @@ div{
 }
 
 .body .container{
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
 .body .container .main{
-    margin-top: 10px;
     height: 200px;
     justify-content: center;
     align-items: center;

@@ -117,7 +117,7 @@ div{
 
 .footer .container .Copyright{
     font-size: 11px;
-    position: absolute;
+    position: right;
     left: 0;
     bottom: -10px;
     margin-bottom: 20px;

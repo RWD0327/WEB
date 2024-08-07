@@ -1,0 +1,1 @@
+https://black-sand-00c318700.5.azurestaticapps.net/

@@ -27,6 +27,11 @@ header .logo{
     height: 40px auto;
 }
 
+header .header{
+    position: absolute;
+    
+}
+
 main {
     padding: 2rem;
 }

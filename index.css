@@ -29,7 +29,7 @@ header .logo{
 
 header .header{
     position: absolute;
-    
+    text-decoration: none;
 }
 
 main {

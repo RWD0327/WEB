@@ -25,6 +25,8 @@ function handleResize() {
 	}
 }
 
-const texts = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5'];
-const randomText = texts[Math.floor(Math.random() * texts.length)];
-console.log(randomText);
+function randomText() {
+	const texts = ['개발자', '대학생', '백수가 꿈인'];
+	const randomText = texts[Math.floor(Math.random() * texts.length)];
+	console.log(randomText);
+}

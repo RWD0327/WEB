@@ -9,11 +9,12 @@
     color: white;
     text-decoration: none;
     list-style-type: none;
+    width: 100%;
 }
 
 body {
-    display: flex;
-    height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 body header {
@@ -23,6 +24,11 @@ body header {
     align-items: center;
 }
 
-body header #logo{
-    float: inline-start;
+body header #menu ul{
+}
+
+body .section *{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }

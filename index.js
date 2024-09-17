@@ -1,18 +1,12 @@
-window.addEventListener('resize', function() {
-    const menu = document.getElementById('menu');
-    if (window.innerWidth < 674) {
-        menu.style.display = 'none';
+function checkWindowSize() {
+    const div = document.getElementById("menu");
+    if (window.innerWidth < 600) {
+      div.style.display = "none";
     } else {
-        menu.style.display = 'block';
+      div.style.display = "block";
     }
-});
+  }
 
-// Initial check
-document.addEventListener('DOMContentLoaded', function() {
-    const menu = document.getElementById('menu');
-    if (window.innerWidth < 674) {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-    }
-});
+  // 페이지 로드 시 및 창 크기 변경 시 크기 확인
+  window.addEventListener('resize', checkWindowSize);
+  window.addEventListener('load', checkWindowSize);

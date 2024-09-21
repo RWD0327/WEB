@@ -2,7 +2,7 @@
 :root{
     --font : Arial, Helvetica, sans-serif;
     --background-color: rgb(29, 29, 29);
-    --text: white;
+    --text: #ffffff;
     --width: 100%;
 }
 

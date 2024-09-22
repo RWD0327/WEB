@@ -19,6 +19,7 @@ body{
     font-family: var(--font);
     background-color: var(--background-color);
     color: var(--text);
+    flex: 1;
     height: 600dvh;
     margin: 0;
     padding: 0;

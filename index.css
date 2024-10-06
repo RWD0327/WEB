@@ -18,7 +18,7 @@
 
 @media screen and (max-width : 1848px) and (orientation : landscape)
 {
-    body {
-        color: blue;
+    .hidden{
+        display: none;
     }
 }

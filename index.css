@@ -1,0 +1,24 @@
+:root {
+    --font : sans-serif;
+    --background-color : #181818;
+    --text-color : #ffffff;
+    --font-size : calc(0.852em + 0.5vw);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    text-decoration: none;
+    list-style: none;
+}
+
+@media screen and (max-width : 1848px) and (orientation : landscape)
+{
+    body {
+        color: blue;
+    }
+}

@@ -2,68 +2,87 @@
 <html lang="ko-kr">
     <head>
         <title>PTUTC</title>
-        <meta name="viewport" charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
     </head>
-    <header>
-        <div>
-            <img src="img/logo.png" alt="PTUTC">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="sub/DEV/Dev.html">Dev</a></li>
-                <li><a href="sub/ABOUT/About.html">About</a></li>
-                <li><a href="sub/PROJECT/Projects.html">Projects</a></li>
-                <li><a href="sub/CONTACT/Contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hidden">
-            <ul>
-                <li><a href="sub/DEV/Dev.html">Dev</a></li>
-                <li><a href="sub/ABOUT/About.html">About</a></li>
-                <li><a href="sub/PROJECT/Projects.html">Projects</a></li>
-                <li><a href="sub/CONTACT/Contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
     <body>
+        <header>
+            <div>
+                <a href="#"><img src="img/logo.png" alt="PTUTC"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="sub/DEV/Dev.html">Dev</a></li>
+                    <li><a href="sub/ABOUT/About.html">About</a></li>
+                    <li><a href="sub/PROJECT/Projects.html">Projects</a></li>
+                    <li><a href="sub/CONTACT/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <aside class="hidden_menu">
+                <section class="h_icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <ul>
+                    <li><a href="sub/DEV/Dev.html">Dev</a></li>
+                    <li><a href="sub/ABOUT/About.html">About</a></li>
+                    <li><a href="sub/PROJECT/Projects.html">Projects</a></li>
+                    <li><a href="sub/CONTACT/Contact.html">Contact</a></li>
+                </ul>
+            </aside>
+        </header>
         <div class="main">
-            안녕하세요! 
-            <br> 
-            저희는 한 멍청이가 아무련 계획도없이 만든 평택대학교 프로그래밍 팀 PTUTC입니다!
-        </div>
-        <div class="member">
-            <h1>Member</h1>
-            <div class="member_list">
-                <div class="member_card">
-                    <img src="img/1.jpg" alt="1">
-                    <h2>김진욱</h2>
-                    <p>평택대학교 스마트모빌리티 학과</p>
+            <div class="main_text">
+                <h1>PTUTC</h1>
+                <p>PTUTC는 평택대학교 학생들이 모여 만든 개발팀입니다.</p>
+            </div>
+            <div class="member">
+                <h1>Member</h1>
+                <div class="member_list">
+                    <div class="member_card">
+                        <img id="profile" src="assets/PTU.png" alt="1">
+                        <h2>김진욱</h2>
+                        <p><img id="ptu" src="assets/PTU.png" alt="PTU">평택대학교 스마트모빌리티 학과</p>
+                    </div>
+                    <div class="member_card">
+                        <img id="profile" src="assets/PTU.png" alt="2">
+                        <h2>김동하</h2>
+                        <p><img id="ptu" src="assets/PTU.png" alt="PTU">평택대학교 융합소프트웨어 학과</p>
+                    </div>
                 </div>
-                <div class="member_card">
-                    <img src="img/2.jpg" alt="2">
-                    <h2>김동하</h2>
-                    <p>평택대학교 융합소프트웨어 학과</p>
-                </div>
-        </div>
-        <div class="Projects">
-            <h1>Projects</h1>
-            <div class="Projects_list">
-                <div class="Projects_card">
-                    <img src="img/1.jpg" alt="1">
-                    <h2>프로젝트1</h2>
-                    <p>프로젝트 설명</p>
-                </div>
-                <div class="Projects_card">
-                    <img src="img/2.jpg" alt="2">
-                    <h2>프로젝트2</h2>
-                    <p>프로젝트 설명</p>
+            </div>
+            <div class="Projects">
+                <h1>Projects</h1>
+                <div class="Projects_list">
+                    <div class="Projects_card">
+                        <img src="img/1.jpg" alt="1">
+                        <h2>프로젝트1</h2>
+                        <p>프로젝트 설명</p>
+                    </div>
+                    <div class="Projects_card">
+                        <img src="img/2.jpg" alt="2">
+                        <h2>프로젝트2</h2>
+                        <p>프로젝트 설명</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div>
+                <a href="#"><img src="img/logo.png" alt="PTUTC"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub/DEV/Dev.html">Dev</a></li>
+                    <li><a href="sub/ABOUT/About.html">About</a></li>
+                    <li><a href="sub/PROJECT/Projects.html">Projects</a></li>
+                    <li><a href="sub/CONTACT/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 PTUTC. All rights reserved.</p>
+        </footer>
     </body>
-    <footer>
-
-    </footer>
 </html>

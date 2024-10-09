@@ -1,38 +1,138 @@
 :root {
-    --font : sans-serif;
-    --background-color : #181818;
-    --text-color : #ffffff;
-    --font-size : calc(0.852em + 0.5vw);
+    --font: sans-serif;
+    --background-color: #181818;
+    --text-color: #ffffff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
-    background-color: var(--background-color);
-    font-size: var(--font-size);
     text-decoration: none;
     list-style: none;
 }
 
-header{
+html, body {
+    height: 100%; /* 전체 화면 높이 설정 */
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 0.5em;
     background-color: #000000;
+    padding: 14.5px 14.5px;
 }
 
-@media (max-width : 700px){
-    .hidden{
+header ul {
+    display: flex;
+    background-color: transparent;
+}
+
+header ul li {
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+header .menu ul li:hover {
+    background-color: #181818;
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+}
+
+.hidden_menu {
+    position: fixed;
+    background-color: black;
+    width: auto;
+}
+
+.hidden_menu > ul {
+    display: none;
+}
+
+.hidden_menu ul li:hover {
+    background-color: #181818;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+body {
+    flex: 1;
+    display: flex;
+    background-color: var(--background-color);
+}
+
+body .main {
+    flex: 1; /* 본문이 남은 공간을 차지하도록 설정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14.5px;
+}
+
+body .main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14.5px;
+}
+
+body .member_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+body .member_list #profile{
+    width: 150px;
+    height: 150px;
+}
+
+body .member_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+body .member_card #ptu {
+    width: 14.5px;
+    height: 14.5px;
+}
+
+footer {
+    position-anchor: bottom;
+    width: 100%; /* 푸터가 전체 너비를 차지하도록 설정 */
+    background-color: #000000;
+    padding: 14.5px;
+    color: var(--text-color);
+    flex-shrink: 0; /* 푸터가 압축되지 않도록 설정 */
+}
+
+@media (min-width: 600px) {
+    .hidden_menu {
         display: none;
     }
 }
 
-@media (min-width : 700px){
-    .menu{
+@media (max-width: 600px) {
+    .menu {
         display: none;
     }
 }

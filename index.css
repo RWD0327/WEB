@@ -29,13 +29,15 @@ header {
 }
 
 header ul {
+    flex-wrap: wrap;
     display: flex;
     background-color: transparent;
 }
 
 header ul li {
+    flex-wrap: wrap;
     margin: 0 4.886px;
-    padding: 7px;
+    padding: 0 7px;
     border-radius: 20px;
 }
 
@@ -52,8 +54,22 @@ header .menu ul li:hover {
     width: auto;
 }
 
+.hidden_menu_bar{
+    width: 74px;
+    height: 8px;
+    margin: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 .hidden_menu > ul {
     display: none;
+}
+
+.hidden_menu ul li {
+    margin: 0 4.886px;
+    padding: 0 7px;
+    border-radius: 20px;
 }
 
 .hidden_menu ul li:hover {

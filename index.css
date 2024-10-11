@@ -102,14 +102,19 @@ body .main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 14.5px;
 }
 
 body .main_text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 14.5px;
+}
+
+body .member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 14.5px;
 }
 
@@ -118,16 +123,10 @@ body .member_list {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-body .member_list #profile{
-    width: 80px;
-    height: 80px;
 }
 
 body .member_card {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
@@ -138,9 +137,60 @@ body .member_card {
     border-radius: 20px;
 }
 
-body .member_card #ptu {
-    width: 14.5px;
-    height: 14.5px;
+body .member_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 0 4px;
+}
+
+body .member_name #profile{
+    width: 74px;
+    height: 74px;
+}
+
+body .member_info{
+    padding: 0 4px;
+}
+
+body .Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14.5px;
+}
+
+body .Projects_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body .Projects_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+body .Projects_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 0 4px;
+}
+
+body .Projects_name img{
+    width: 74px;
+    height: 74px;
 }
 
 footer {

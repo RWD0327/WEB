@@ -29,6 +29,17 @@ header {
     flex-shrink: 0;
 }
 
+header .logo{
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo #logo {
+    padding: 2px 0;
+    width: 40px auto;
+    height: 40px;
+}
+
 header ul {
     background-color: transparent;
 }
@@ -45,16 +56,26 @@ header .menu ul li:hover {
     border-radius: 20px;
 }
 
-.hidden_menu {
-    float: right;
+.hidden_sidebar{
+    width: 200px;
+    height: 100%;
+    top: 54px; /* header height */
+    bottom: 54px; /* footer height */
     position: fixed;
-    background-color: black;
-    width: auto;
+    right : -200px;
+
+    top: 0;
+    background-color: #0000009d;
+    transition: left 0.3s ease;
+    color: #ffffff;
 }
 
-
+.hidden_sidebar .active {
+    right: 0px;
+}
 
 #hidden_menu_bar{
+    cursor: pointer;
     width: 37px;
     height: 4.3px;
     background-color: #fff;

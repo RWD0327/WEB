@@ -1,36 +1,111 @@
 :root{
-    --background-color: rgb(34, 34, 34);
+    --background-color: rgb(17, 17, 17);
     --text-color: white;
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(255,255,255);
     text-decoration: none;
     list-style: none;
-    color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
-body{
+html, body{
     background-color: var(--background-color);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main{
+    flex-grow: 1;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--background-color);
     width: 100%;
-    height: fit-content;
+    height: 50px
 }
 
-header img{
-    
+header div{
+    padding: 0.97rem;
 }
 
-header ul li{
+header .logo{
+    margin: 0;
+    padding: 0.97rem;
+}
+
+header .logo img{
+    width: 35px;
+    height: 35px;
+}
+
+header .menu nav ul li{
     display: inline;
-    margin: 0 10px;
+    padding: 0 0.25rem; /* 4px to rem */
+}
+
+header .menu nav ul li a{
+    color: var(--text-color);
+    padding: 0.15rem 0.375rem; /* 2.4px 6px to rem */
+}
+
+header .menu nav ul li:hover > a{
+    translate: all 2s;
+    border-radius: 1.5rem;
+    background-color: rgba(68, 68, 68, 0.438);
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+
+main .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+main .member{
+    justify-items: center;
+    padding: 20px;
+}
+
+main .member .member_card_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(36, 36, 36, 0.438);
+}
+
+footer div{
+    padding: 0.97rem;
+}
+
+footer .left-side > *{
+    padding: 7px 0;
 }

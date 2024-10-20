@@ -87,12 +87,66 @@ main .home{
 
 main .member{
     justify-items: center;
+    align-items: center;
     padding: 20px;
 }
 
-main .member .member_card_list{
+main .member_card_list{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+}
+
+main .member_card{
+    width: 100% auto;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(68, 68, 68, 0.438);
+}
+
+
+main .member_card:hover{
+    animation: scaleup 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleup{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+main .project{
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main .project_card_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+}
+
+main .project_card{
+    width: 100% auto;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(68, 68, 68, 0.438);
+}
+
+main .project_card:hover{
+    animation: scaleup 1s ease-in-out forwards;
+}
+
+main .contact{
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
 }
 
 footer{

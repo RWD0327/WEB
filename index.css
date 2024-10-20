@@ -93,12 +93,12 @@ main .member{
 }
 
 main .member_card_list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main .member_card{
-    width: 100% auto;
+    width: fit-content;
     display: flex;
     padding: 20px;
     margin: 10px;
@@ -127,12 +127,12 @@ main .project{
 }
 
 main .project_card_list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main .project_card{
-    width: 100% auto;
+    width: fit-content;
     display: flex;
     padding: 20px;
     margin: 10px;

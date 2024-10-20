@@ -164,3 +164,24 @@ footer div{
 footer .left-side > *{
     padding: 7px 0;
 }
+
+footer .left-side ul li{
+    width: fit-content;
+    padding: 3px 2px;
+}
+
+footer .left-side ul li:hover{
+    border-radius: 20px;
+    background-color: rgba(68, 68, 68, 0.438);
+}
+
+footer .right-side > *{
+    padding: 7px 0;
+}
+
+footer .right-side ul li{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 15px 2px;
+}
